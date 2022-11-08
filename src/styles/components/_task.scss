@@ -1,0 +1,51 @@
+.Task__container {
+  padding: 0.5rem;
+  background-color: lighten($main-color, 15);
+  width: 90%;
+  margin: 0.5rem auto;
+  border-radius: 4px;
+
+  .Task__info {
+    h3 {
+      font-size: 0.9em;
+      color: rgb(241, 238, 238);
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 0.7em;
+    }
+  }
+
+  .Task__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem 0;
+
+    button {
+      width: 45%;
+      padding: 0.3rem 0;
+      background-color: darken($main-color, 15);
+      color: white;
+      border: 0;
+      outline: 0;
+      border-radius: 5px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: white;
+        color: $black;
+        font-weight: bold;
+      }
+    }
+
+    .button-delete {
+      background: rgb(237, 54, 54);
+
+      &:hover {
+        color: rgb(237, 54, 54);
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.formTask__container {
+  margin: 1rem 0;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.8rem;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 330px;
+    background-color: darken($main-color, 15);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+    input,
+    textarea {
+      width: 100%;
+      max-width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 0;
+      outline: 0;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      display: block;
+      padding: 0.5rem;
+      border: 0;
+      outline: 0;
+      border-radius: 5px;
+      background-color: lighten($main-color, 15);
+      color: white;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: white;
+        color: $black;
+        font-weight: bold;
+      }
+    }
+  }
+}
