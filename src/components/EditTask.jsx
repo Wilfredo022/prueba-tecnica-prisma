@@ -69,7 +69,7 @@ export const EditTask = () => {
           placeholder='Descripción de la tarea'
         />
         <button type='submit'>Editar</button>
-        {error ? <p>Los campos son obligatorios</p> : null}
+        {error ? <p className='error'>Los campos son obligatorios</p> : null}
         <button onClick={handleClose} className='close'>
           x
         </button>

@@ -62,7 +62,7 @@ export const FormTask = () => {
           placeholder='Descripción de la tarea'
         />
         <button type='submit'>Agregar</button>
-        {error ? <p>Los campos son obligatorios</p> : null}
+        {error ? <p className='error'>Los campos son obligatorios</p> : null}
       </form>
     </div>
   );
